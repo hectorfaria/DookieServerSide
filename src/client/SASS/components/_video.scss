@@ -1,0 +1,38 @@
+.video-js {
+	color: white;
+	font-size: 1.6rem !important;
+	width: 102% !important;
+	height: 100vh;
+}
+
+.vjs-default-skin .vjs-big-play-button {
+	font-size: 0 !important;
+}
+
+.video-js .vjs-control-bar,
+.video-js .vjs-big-play-button,
+.video-js .vjs-menu-button .vjs-menu-content {
+	background-color: brown !important;
+	height: 5rem !important;
+	border: 3px solid white !important;
+}
+
+.video-js .vjs-play-progress,
+.video-js .vjs-load-progress,
+.video-js .vjs-load-progress div,
+.video-js .vjs-progress-control,
+.video-js .vjs-progress-holder,
+.vjs-play-progress .vjs-slider-bar,
+.vjs-remaining-time-display {
+	color: transparent !important;
+	background-color: transparent !important;
+	width: 0 !important;
+	height: 0 !important;
+	opacity: 0 !important;
+	&::before {
+		color: transparent !important;
+		background-color: transparent !important;
+		width: 0 !important;
+		height: 0 !important;
+	}
+}

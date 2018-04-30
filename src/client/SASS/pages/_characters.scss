@@ -1,0 +1,61 @@
+.characters {
+    &__background {
+        background: url("http://chairmanmigo.com/wp-content/uploads/2014/06/Wheres-Waldo-medieval.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        padding: 9%;
+    }
+    &__card {
+        width: 80%;
+        margin: 10%;
+        margin-top: 2rem;
+        border: 3px solid black;
+        border-radius: 3px;
+        background-size: cover;
+        transition: background-color .5s;
+        background: white;
+        @media (min-width: 576px) {
+            margin-top: 5%;
+        }
+        &--img {
+            background-color: rgb(255, 255, 255);
+            opacity: 100%;
+            position: contain;
+            z-index: -1;
+            width: 80%;
+            display: block;
+            border-radius: 7px;
+            transition: all .5s;
+            text-align: center;
+            margin: 10% auto;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+        &--body {
+            height: 30%;
+            background-color: black;
+            color: white;
+            font-size: 7rem;
+        }
+        &--status {
+            background-color: black;
+            color: $alive-color;
+        }
+    }
+    &__statscard {
+        width: 80%;
+        margin: 2%;
+        padding: 2% 12%;
+        font-size: 1.8rem;
+        border: 3px solid black;
+        border-radius: 3px;
+        background-size: cover;
+        transition: background-color .5s;
+        background: white;
+        @media (min-width: 576px) {
+            margin-top: 5%;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.quicksand {
+    font-family: 'Quicksand', cursive
+}
+
+.pacifico {
+    font-family: 'Pacifico', cursive
+}
+
+.cinzel {
+    font-family: 'Cinzel', serif
+}
+
+.titles {
+    display: block;
+    color: black;
+    text-shadow: -2px 2px 5px $main-color;
+    font-weight: boldest;
+    font-size: 4rem;
+}
+
+.para {
+    font-size: 1.5rem;
+    color: $third-color;
+}
+
+.text-error {
+    color: $dead-color;
+    font-size: 1.2rem;
+}
+
+.titles-sm {
+    display: block;
+    color: black;
+    text-shadow: -2px 2px 5px $main-color;
+    font-weight: boldest;
+    font-size: 2rem;
+}

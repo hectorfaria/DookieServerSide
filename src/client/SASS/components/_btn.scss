@@ -1,0 +1,81 @@
+.btn {
+	display: inline-block;
+	position: relative;
+	text-decoration: none;
+	color: $third-color;
+	transition: all .5s ease;
+	font-size: 1.4vw;
+	border-radius: .5rem;
+	border: 0;
+	&:focus {
+		outline: 0;
+	}
+	&:hover {
+		color: $third-color;
+		transform: translateY(-3px);
+		box-shadow: 0 1rem 2rem rgba($secondary-color, .4);
+		&::after {
+			transform: scaleX(1.6) scaleY(1.4);
+			opacity: 0;
+		}
+	}
+	&:active {
+		transform: translateY(-1px);
+		box-shadow: 0 0.1rem 2rem rgba($secondary-color, .4);
+	}
+	&--google {
+		background-color: #3678e2;
+		color: $third-color;
+		margin: 5px;
+	}
+	&--discord {
+		background-color: $grey-color;
+		border-color: $third-color;
+		&:hover {
+			background-color: $discord-color;
+			border-color: $third-color;
+		}
+	}
+	&--warning {
+		background-color: #ff9933;
+		color: $third-color;
+		margin: 5px;
+	}
+	&--danger {
+		background-color: #d9534f;
+		color: $third-color;
+		margin: 5px;
+	}
+	&--donate {
+		background: transparent;
+		border: none !important;
+		margin: 25%;
+		transition: all .5s ease;
+		&:hover {
+			transform: scale(1.5);
+		}
+	}
+	&--edit {
+		background-color: $main-color;
+		padding: 2.5rem;
+		margin: 2.5rem;
+		border-radius: 50%;
+		border-width: 2px;
+		border-color: $third-color;
+		color: white;
+		margin-top: 8rem;
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		z-index: 10;
+	}
+	&--success {
+		background-color: $alive-color;
+		color: $third-color;
+		margin: 5px;
+	}
+	&--invisible {
+		background: transparent;
+		border: none;
+	}
+}

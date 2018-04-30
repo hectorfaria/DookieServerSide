@@ -1,0 +1,38 @@
+.containers {
+    background-color: $main-color;
+    color: $third-color;
+    border-radius: 3px;
+    margin: 10% 20%;
+    padding: 2rem;
+    border: 5px white solid;
+    transition: all 1s ease;
+    &__imgs {
+        width: 100%;
+        border-radius: 3px;
+        border: 2px solid $third-color;
+    }
+    &--title {
+        font-size: 4rem;
+        text-align: center;
+    }
+    &--para {
+        font-size: 2vw;
+    }
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 3rem 5rem rgba(black, .65);
+    }
+}
+
+.container {
+    background-color: $main-color;
+    color: $third-color;
+    border-radius: 3px;
+    padding: 1rem;
+    @media (max-width: 576px) {
+        margin-top: 7%;
+    }
+    &--para {
+        font-size: 1.2rem;
+    }
+}

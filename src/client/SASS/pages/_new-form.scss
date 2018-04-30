@@ -1,0 +1,27 @@
+.new-form {
+    width: 34rem;
+    padding: 15vh 0 0;
+    margin: auto;
+    &__survey {
+        position: relative;
+        z-index: 1;
+        background: $main-color;
+        max-width: 34rem;
+        margin: 0 auto 10rem;
+        padding: 10%;
+        text-align: center;
+        box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.2), 0 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.24);
+        border-radius: 3px;
+        border: 3px solid #f2f2f2;
+    }
+    input {
+        outline: 0;
+        background: #f2f2f2;
+        width: 80%;
+        border: 0;
+        margin: 0 0 5%;
+        padding: 2%;
+        box-sizing: border-box;
+        font-size: 1.4rem;
+    }
+}

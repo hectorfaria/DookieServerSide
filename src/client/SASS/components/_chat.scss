@@ -1,0 +1,92 @@
+.chat-box {
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	&__title-cont {
+		padding-top: 7rem;
+		padding-bottom: 1rem;
+		background-color: brown;
+		border: 3px solid white;
+		width: 100%;
+		h1 {
+			color: white;
+			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+			font-size: 2rem;
+		}
+	}
+	&__boxlist {
+		border: 3px solid white;
+		overflow: hidden;
+		text-align: left;
+		height: 75vh;
+		padding: 3rem;
+		overflow-wrap: break-word;
+		background-image: linear-gradient(rgba(white, .4) 0%, rgba(white, .4)), url("https://i.imgur.com/tPuh8Xo.jpg");
+		background-size: cover;
+		margin: auto;
+		display: block;
+		&:hover {
+			overflow-y: scroll;
+		}
+	}
+	&__form {
+		position: fixed;
+		bottom: 0;
+		width: 24vw;
+		padding: 5px;
+		border: 1px solid white;
+		background-color: brown;
+	}
+	&__input {
+		font-size: 2rem;
+		font-family: 'Quicksand', cursive;
+		border-radius: 3px;
+		border-bottom: 3px solid transparent;
+		width: 100%;
+		display: block;
+		background-color: transparent;
+		color: white;
+		border: none;
+		&:focus {
+			outline: none;
+			box-shadow: 0 1rem 2rem rbga(black, .4);
+			border-bottom: 3px solid white;
+			font-size: 1.8rem;
+		}
+		&::-webkit-input-placeholder {
+			color: white;
+		}
+	}
+	&__message {
+		margin: 4px;
+		margin-left: 15px;
+		display: inline-block;
+		position: relative;
+		width: 200px;
+		height: auto;
+		background: radial-gradient(#d6c059 15%, transparent 16%) 0 0,
+			radial-gradient(#d6c059 15%, transparent 16%) 8px 8px,
+			radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px,
+			radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
+		background-color: #f8e796;
+		background-size: 16px 16px; //background-color: lightyellow;
+		z-index: 3;
+		border-radius: 1rem;
+		padding: 5px;
+		box-shadow: 1rem 1rem 1rem rgba(black, .5);
+		font-size: 1.3rem;
+		&:after {
+			content: ' ';
+			position: absolute;
+			width: 0;
+			height: 0;
+			left: -20px;
+			right: auto;
+			top: 0px;
+			z-index: -1;
+			bottom: auto;
+			border: 20px solid;
+			border-color: #f8e796 transparent transparent transparent;
+		}
+	}
+}

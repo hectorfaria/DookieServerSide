@@ -1,0 +1,30 @@
+@import "variables";
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+.row {
+	margin: 0 !important;
+	margin-right: 0 !important;
+}
+html {
+	font-size: 62.5%;
+	overflow-x: hidden;
+}
+
+body {
+	background-color: $background-color;
+	text-align: center;
+	box-sizing: border-box;
+	position: relative;
+}
+
+a {
+	&:hover {
+		text-decoration: none;
+	}
+}

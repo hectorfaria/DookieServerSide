@@ -1,0 +1,28 @@
+.header {
+    background-color: transparent;
+    display: block;
+    color: transparent;
+    &__fonts {
+        font-size: 1.4vw;
+        margin: auto;
+        position: relative;
+        top: 0.7rem;
+        padding: 5px;
+        text-decoration: none;
+    }
+    &:hover {
+        background-color: $main-color;
+        border-bottom: 2px solid white;
+        color: $third-color;
+        .links {
+            color: $third-color !important;
+        }
+    }
+    &i {
+        font-size: 1.4vw !important;
+    }
+}
+
+.logomonkey {
+    width: 3.6rem;
+}
